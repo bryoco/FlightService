@@ -1,0 +1,13 @@
+# Trying to create a user with an already existing username
+#
+# user 1
+create unique_user_1 1234 10000
+create unique_user_1 1234 10000
+quit
+*
+#
+# expected output for user 1
+Created user unique_user_1
+Failed to create user
+Goodbye
+*

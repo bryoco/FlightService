@@ -1,0 +1,15 @@
+# Trying to login with username/password that are longer than 20 characters
+#
+# user 1
+create unique_user_1 1234 10000
+login unique_user_1 a123456789a1234567890
+login a123456789a1234567890 unique_user_1
+quit
+*
+#
+# expected output for user 1
+Created user unique_user_1
+Login failed
+Login failed
+Goodbye
+*
